@@ -1,0 +1,6 @@
+# spring-boot web application 이 작동되는 port 설정
+server.port=8080
+
+# thymeleaf view 의 설정
+
+
