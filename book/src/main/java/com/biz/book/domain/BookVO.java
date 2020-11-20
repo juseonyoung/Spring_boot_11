@@ -9,6 +9,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Builder
 
 @Entity
 @Table(name="tbl_book")
@@ -32,7 +33,7 @@ public class BookVO {
     @Column(length = 125)
     private String comp;
 
-
+    @Column(nullable = true)
     private int price;
 
 }

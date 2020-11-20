@@ -9,3 +9,11 @@
   
  * spring-boot WAS에서 거의 표준처럼 사용되는 view이다. 
  
+ # data-jpa 프로젝트
+ * spring jpa 프로젝트에서 spring.datasource.initialize-mode를 alwalys로 설정한 후 
+  src/main/resource 폴더에 data.sql 파일을 생성 한 후 insert sql을 저장해 두면 프로젝트가 재 시작될 때
+  data.sql 파일의 sql문을 읽어서 데이터를 자동으로 추가해준다. 
+  샘플데이터가 필요할 때 사용하면 좋다 .
+ * 또한 src/main/resource 폴더에 schema.sql 파일을 생성한 후 DDL sql 문을 저장해 두면
+ 프로젝트가 재 시작될 때 DDL SQL 문을 실행할 수 있다.  
+ 
