@@ -23,10 +23,10 @@ public class HelloController {
 		this.bService = bService;
 	}
 
-	@ResponseBody
+	
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String hello() {
-		return "Hello Spring-boot Web Application";
+		return "home";
 	}
 	
 	@RequestMapping(value="/home", method=RequestMethod.GET)
